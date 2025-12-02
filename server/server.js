@@ -95,12 +95,7 @@ app.use((err, req, res, next) => {
 
 // hardcode port to 3000 for now
 const port = process.env.PORT || 3000;
-const server = http.Server(app);
-// commenting out socket stuff for now
-// socket.init(server);
 
-server.listen(port, () => {
+app.listen(port, () => {
   console.log(`Server running on port: ${port}`);
 });
-
-export default app
