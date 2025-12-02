@@ -1,11 +1,5 @@
 {
   "relatedProjects": [
     "h2gro-server"
-  ],
-  "rewrites": [
-    {
-      "source": "/api",
-      "destination": "https://h2gro-server.vercel.app"
-    }
   ]
 }
