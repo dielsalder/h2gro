@@ -1,5 +1,7 @@
 {
-  "relatedProjects": "h2gro-server",
+  "relatedProjects": [
+    "h2gro-server"
+  ],
   "rewrites": [
     {
       "source": "/api",
