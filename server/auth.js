@@ -3,7 +3,6 @@ const User = require("./models/user");
 // const socket = require("./server-socket");
 
 // create a new OAuth client used to verify google sign-in
-//    TODO: replace with your own CLIENT_ID
 const CLIENT_ID = "165089793235-ovm7mojq6cb3advrbqmis38sqqk144jt.apps.googleusercontent.com";
 const client = new OAuth2Client(CLIENT_ID);
 
@@ -26,7 +25,7 @@ function getOrCreateUser(user) {
     const newUser = new User({
       name: user.name,
       googleid: user.sub,
-      onboardingDone:false,
+      onboardingDone: false,
     });
 
     return newUser.save();

@@ -6,7 +6,7 @@
   "scripts": {
     "hotloader": "webpack-dev-server --config ./webpack.config.js --mode development --port 5000",
     "start": "nodemon",
-    "build": "webpack",
+    "build": "env NODE_OPTIONS=--openssl-legacy-provider webpack",
     "test": "mocha -r esm"
   },
   "repository": {

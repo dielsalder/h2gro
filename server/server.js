@@ -33,9 +33,7 @@ require('dotenv').config();
 // const socket = require("./server-socket");
 
 // Server configuration below
-// TODO change connection URL after setting up your team database
 const mongoConnectionURL = process.env.MONGO_URL;
-// TODO change database name to the name you chose
 const databaseName = "h2gro";
 
 // connect to mongodb
